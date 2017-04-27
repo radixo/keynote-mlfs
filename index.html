@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Machine Learning First Steps</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/swiss.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+        <div class="vcenter">
+            <h1>Machine Learning First Steps</h1>
+            <h3>por Walter Neto</h3>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Um pouco sobre mim</h2>
+        <ul>
+            <li><p>Walter Neto</p></li>
+            <li><p>Sou de Bebedouro - SP
+            <li><p>Morei 9 ano em Ribeirão Preto, onde me formei em Eng. de
+                Computação</p></li>
+            <li><p>Sou cidadão de Campinas desde o comço de 2015</p></li>
+            <li><p>Comecei a programar computadores aos 12 anos de
+                idade</p></li>
+            <li><p>Sou usuário e ja fiz alguns commits para o projeto
+                OpenBSD</p></li>
+            <li><p>Em ML comecei a trabalhar com OCR e como gosto muito mais de
+                ter know-why do que know-how, estudei bastante da área e falta
+                muito ainda pra aprender</p></li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>O que é Machine Learning?</h2>
+        <p>Machine Learning(ML) é um conceito que surgiu na metade do século
+        passado, mas que lentamente evoluiu devido a complexidade e tecnologias
+        disponíveis para avanço nos estudos na época do seu surgimento.</p>
+        <p>É uma das áreas de Inteligência Artificial / Artificial Intelligence
+        (AI / IA).</p>
+        <p>Provavelmente você é um usuário de ML, e digo provavelmente pois
+        podemos ter alguém "fora da curva" nessa apresentação. Ex.: Monges :-P</p>
+        <p>Quando você usa um buscador na internet(Google), uma rede
+        social(Facebook) ou le seus emails(GMai / Hotmail / Yahoo),
+        provavelmente existe um algoritmo de ML embarcado nestes serviços que
+        promovem uma melhor experiência no uso desta aplicação.</p>
+    </section>
+
+    <section class="slide">
+        <h2>O que é Machine Learning?</h2>
+        <p>Primeira Definição</p>
+        <blockquote>
+            <p>Machine Learning: Field of study that gives computers the ability
+            to learn without being explicitly programmed.</p>
+            <p><cite>Arthur Samuel (1959)</cite></p>
+        </blockquote>
+    </section>
+
+    <section class="slide">
+        <h2>O que é Machine Learning?</h2>
+        <p>Segunda Definição (mais formal)</p>
+        <blockquote>
+            <p>Well-posed Learning Problem: A computer program is said to learn
+            from experience E with respect to some task T and some performance
+            measure P, if its performance on T, as measured by P, improves with
+            experience E.</p>
+            <p><cite>Tom Mitchell (1998)</cite></p>
+        </blockquote>
+    </section>
+
+    <section class="slide">
+        <h2>Um pouco de história</h2>
+        <p>Principais eventos na linha do tempo</p>
+        <ul>
+            <li>
+                <p><strong>&lt;1950</strong> - Vários trabalhos e descobertas em
+                Estatística e Teoria da Probabilidade. Ex.: Bayle, Thomas -
+                <i>Doctrine of Chances</i>, Século XVIII.</p>
+            </li>
+            <li>
+                <p><strong>1950</strong> - Turing Test, Turing's Learning
+                Machine, trouxe idéias que ajudaram na criação dos Algoritmos
+                Genéticos.</p>
+            </li>
+            <li>
+                <p><strong>1957</strong> - Invenção do Perceptron. A invenção é
+                um dos marcos de descobertas no campo da IA e aguçou bastante a
+                área de ML.</p>
+            </li>
+            <li>
+                <p><strong>1967</strong> - Nearest Neighbor, o início do
+                reconhecimento de padrões.</p>
+            </li>
+            <li>
+                <p><strong>1982</strong> - Recurrent Neural Network, John
+                Hopfield popularizou este tipo de ML com a Hopfield Network, que
+                foi descrita aproximadamente em 1974.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Um pouco de história</h2>
+        <p>Principais eventos na linha do tempo</p>
+        <ul>
+            <li>
+                <p><strong>1989</strong> - Axcelis, Inc. lança o Evolver, o
+                primeiro solução comercial de software de algoritmos
+                genéticos.</p>
+            </li>
+            <li>
+                <p><strong>1995</strong> - Algoritmo Ramdom Forest</p>
+            </li>
+            <li>
+                <p><strong>1995</strong> - Support Vector Mahcines (SVM)</p>
+            </li>
+            <li>
+                <p><strong>1997</strong> - IBM Deep Blue supera Kasparov</p>
+            </li>
+            <li>
+                <p><strong>&gt;2000</strong> - Deep Learning começa a ser
+                praticável e a comercialização de produtos que utilizam RNAs
+                aumenta consideravelmente</p>
+            </li>
+            <li>
+                <p><strong>&gt;2010</strong> - ML se torna parte de uma grande
+                massa de serviços de software e ganha uma enorme publicidade</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>ML - Classificação de Algoritmos</h2>
+        <p>Os dois tipos mais estuadados são:</p>
+        <ul>
+            <li>
+                <p><strong>Supervised Learning</strong></p>
+            </li>
+            <li>
+                <p><strong>Unspervised Learning</strong></p>
+            </li>
+        </ul>
+        <p>Exitestem outros também, como <strong>Recommender Systems</strong> e
+        <strong>Reinforcemente Learning</strong>.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Supervised Learning</h2>
+        <p>Neste tipo de algorítmos encontramos a solução de dois tipos de
+        problemas, <strong>predição</strong> e <strong>classificação</strong>.<p>
+    </section>
+
+    <section class="slide">
+        <h2>Supervised Learning</h2>
+        <h3>Exemplo de Predição</h3>
+        <br />
+        <img src="imgs/suplrn00.png" />
+    </section>
+
+    <section class="slide">
+        <h2>Supervised Learning</h2>
+        <h3>Exemplo de Classificação</h3>
+        <br />
+        <img style="float:left;" src="imgs/suplrn01.png" />
+        <div class="slide"><img src="imgs/suplrn02.png" /></div>
+    </section>
+
+    <section class="slide">
+        <h2>Unsupervised Learning</h2>
+        <p>Ja neste tipo de abordagem, nós não temos uma base de dados para
+        aprendizagem, e os algorítmos aqui utilizados tentam agrupar(Clustering)
+        os dados fornecidos.</p>
+        <p>É muito comum utilizar este tipo de algoritmo pra extrair informações
+        de um conjunto de dados que as vezes não conseguimos enxergar com uma
+        análise humana em um grande dataset. Ex: Genoma.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Unsupervised Learning</h2>
+        <h3>Exemplo de Clustering</h3>
+        <br />
+        <img src="imgs/unslrn00.png" />
+    </section>
+
+    <section class="slide">
+        <h2>Unsupervised Learning</h2>
+        <h3>Exemplos de Clustering</h3>
+        <br />
+        <img src="imgs/unslrn01.png" />
+    </section>
+
+    <section class="slide">
+        <h2>Unsupervised Learning</h2>
+        <h3>Exemplo de Clustering - GNews</h3>
+        <br />
+        <img src="imgs/unslrn02.png" />
+    </section>
+
+    <section class="slide">
+        <div class="vcenter">
+            <h1>Hands On</h1>
+            <h3>Alguns algoritmos básicos</h3>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Decision Tree</h2>
+        <p style="float:left;">Entropia</p>
+        <img style="margin: 0 0 50px 170px;" src="imgs/hondtr00.png" />
+        <div class="slide"><img src="imgs/hondtr01.png" /></div>
+    </section>
+
+    <section class="slide">
+        <h2>K-Means</h2>
+        <br />
+        <img src="imgs/honkmn00.png" />
+    </section>
+
+    <section class="slide">
+        <h2>K-Means</h2>
+        <br />
+        <img src="imgs/honkmn01.png" />
+    </section>
+
+    <section class="slide">
+        <h2>K-Means</h2>
+        <br />
+        <img src="imgs/honkmn02.png" />
+    </section>
+
+    <section class="slide">
+        <h2>K-Means</h2>
+        <br />
+        <img src="imgs/honkmn03.png" />
+    </section>
+
+    <section class="slide">
+        <h2>K-Means</h2>
+        <br />
+        <img src="imgs/honkmn04.png" />
+    </section>
+
+    <section class="slide">
+        <h2>K-Means</h2>
+        <br />
+        <img src="imgs/honkmn05.png" />
+    </section>
+
+    <section class="slide">
+        <h2>Perceptron - Redes Neurais</h2>
+        <br />
+        <img src="imgs/honpct00.png" />
+        <img src="imgs/honpct01.png" />
+    </section>
+
+    <section class="slide">
+        <h2>Considerações Finais</h2>
+        <ul>
+            <li>
+                <h3>Dicas</h3>
+                <p class="slide">Jamais tente implementar os algorítmos de
+                calculos matemáticos por conta própria, a menos que você seja um
+                PHD em Matemática Aplicada a Computação. Pra isso utilize as
+                bibliotecas de algebra linear pra sua linguagem de programação.</p>
+            </li>
+            <li>
+                <h3>Ferramentas</h3>
+                <div class="slide">
+                    <p>GNU Octave</p>
+                    <p>Matlab</p>
+                    <p>R</p>
+                    <p>scikit-learn e Theano (Python)</p>
+                    <p>Weka (Java)</p>
+                    <p>Accord.NET e Encog Machine Learning Framework (.NET)</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Perguntas ???</h2>
+        <blockquote>
+            <p>Não existe pergunta boba, existe bobo que não pergunta e volta
+            sem nenhuma resposta pra casa<p>
+            <p><cite>Um amigo de um amigo meu</cite></p>
+        </blockquote>
+        <p>
+        <a href="http://www.alephbit.com.br">www.alephbit.com.br</a><br />
+        <a href="mailto:wneto@alephbit.com.br">wneto@alephbit.com.br</a><br />
+        Twitter: @__wneto
+        </p>
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
